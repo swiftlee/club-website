@@ -1,0 +1,41 @@
+@import "unified.css";
+@import "compass/css3";
+/*
+TO DO:
+1.	implement flexbox to make event layout
+2.	make a main event title that 
+3.	have an internal box that will be the date of the event 
+		a.	make the date box a button that could lead to more information about the event
+4.	make the event discription to the right of the event date
+5.	have these event boxes represent horizontally
+		a.	make the events organize themselves chronologicly 
+*/
+
+.event-properties{
+  padding: 0;
+  margin: 8;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: blue;
+  padding: 5px;
+  width: 250px;
+  height: 180px;
+  margin-top: 10px;
+  
+  line-height: 40px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
