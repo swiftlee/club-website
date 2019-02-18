@@ -12,30 +12,24 @@ TO DO:
 */
 
 .event-properties{
-  padding: 0;
-  margin: 8;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
+  display:flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  align-content:space-around;
+  align-items: stretch;
 }
 
 .flex-item {
-  background: blue;
+  background: lightblue;
+  margin: 2px;
   padding: 5px;
-  width: 250px;
-  height: 180px;
-  margin-top: 10px;
   
-  line-height: 40px;
   color: black;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: right;
+  font-size: 12px;
+  text-align: left;
+}
+.flex-description{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
 }
