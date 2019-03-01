@@ -251,10 +251,6 @@ body {
 		color: var(--background-color);
 		padding-top: 10px;
 		padding-bottom: 7px;
-	}
-
-	/* Space between (not outside) the links */
-	.Footer .link + .link {
 		padding-left: 13px;
 	}
 
