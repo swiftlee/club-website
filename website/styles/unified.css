@@ -214,13 +214,13 @@ body {
 		padding: 18px 16px;
 	}
 
-	.topnav.drop-down-menu .topnav-link:last-child {
+	.Topnav.drop-down-menu .link:last-child {
 		padding-bottom: 15px;
 	}
 
 	/* Make the menu items be below the menu icon when clicked */
 	/* Hover the menu over content in a less obtrusive way */
-	.topnav.drop-down-menu > .topnav-right {
+	.Topnav.drop-down-menu .right {
 		display: block;
 		position: absolute;
 		z-index: 10;
@@ -247,7 +247,7 @@ body {
 
 
 	/* Links inside the footer */
-	.Footer > .link {
+	.Footer .link {
 		color: var(--background-color);
 		padding-top: 10px;
 		padding-bottom: 7px;
@@ -269,7 +269,7 @@ body {
 	}
 
 	/* The text at the bottom of the footer */
-	.Footer > .text {
+	.Footer .text {
 		color: var(--background-color);
 		font-family: var(--header-font);
 		width: 100%;
