@@ -145,7 +145,7 @@ body {
 	}
 
 	/* Links in the header when a mouse is over them */
-	.TopNav > .link:hover {
+	.TopNav .link:hover {
 		border-bottom: 4px solid var(--accent-color);
 		padding-bottom: 24px;
 		color: var(--accent-color);
@@ -254,10 +254,6 @@ body {
 		padding-left: 13px;
 	}
 
-	/* Already clicked links change color */
-	.Footer .link:visited {
-		color: var(--background-color);
-	}
 
 	/* Change the link color when the mouse hovers over it */
 	.Footer .link:hover {
