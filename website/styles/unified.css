@@ -114,103 +114,103 @@ body {
 /* Header CSS */
 
 /* The header bar */
-.topnav {
+.TopNav {
 	overflow: hidden;
 	background-color: var(--primary-color);
 	display: flex;
 }
 
-/* The logo in the header */
-.topnav .topnav-logo {
-	width: 50px;
-	height: 50px;
-	padding: 10px 16px;
-}
+  /* The logo in the header */
+	.TopNav .logo {
+		width: 50px;
+		height: 50px;
+		padding: 10px 16px;
+	}
 
-/* Links in the header*/
-.topnav .topnav-link {
-	display: block;
-	color: var(--text-icon-color);
-	text-align: center;
-	padding: 28px 16px;
-	text-decoration: none;
-	font-family: var(--header-font);
-	outline: none;
-}
+	/* Links in the header*/
+	.TopNav .link {
+		display: block;
+		color: var(--text-icon-color);
+		text-align: center;
+		padding: 28px 16px;
+		text-decoration: none;
+		font-family: var(--header-font);
+		outline: none;
+	}
 
-/* Keep the logo in the box */
-#logo-link {
-	box-sizing: initial;
-	flex: 1;
-}
+	/* Keep the logo in the box */
+	#logo-link {
+		box-sizing: initial;
+		flex: 1;
+	}
 
-/* Links in the header when a mouse is over them */
-.topnav .topnav-link:hover {
-	border-bottom: 4px solid var(--accent-color);
-	padding-bottom: 24px;
-	color: var(--accent-color);
-}
+	/* Links in the header when a mouse is over them */
+	.TopNav > .link:hover {
+		border-bottom: 4px solid var(--accent-color);
+		padding-bottom: 24px;
+		color: var(--accent-color);
+	}
 
-/* The header menu is only visible when the screen is small */
-.topnav .topnav-menu-icon {
-	display: none;
-	font-size: 20px;
-	outline: none;
-}
+	/* The header menu is only visible when the screen is small */
+	.TopNav .menu-icon {
+		display: none;
+		font-size: 20px;
+		outline: none;
+	}
 
-/* Move each link to the right side of the page */
-.topnav .topnav-right {
-	display: flex;
-	flex-direction: row;
-}
+	/* Move each link to the right side of the page */
+	.TopNav .right {
+		display: flex;
+		flex-direction: row;
+	}
 
-/* External link icon */
-.external-link {
-	color: var(--light-primary-color);
-	font-size: .75em;
-}
+	/* External link icon */
+	.external-link {
+		color: var(--light-primary-color);
+		font-size: .75em;
+	}
 
 /* Header settings for smaller devices */
 @media screen and (max-width: 650px) {
 
 	/* The logo in the header */
-	.topnav .topnav-logo {
+	.TopNav .logo {
 		width: 40px;
 		height: 40px;
 	}
 
 	/* Links in the header when a mouse is over them */
-	.topnav .topnav-link:hover {
+	.TopNav .link:hover {
 		border-bottom: none;
 		padding-bottom: 14px;
 	}
 
 	/* Effect all header links except the logo */
-	.topnav-right .topnav-link{
+	.right .link{
 		display: none;
 	}
 
 	/* Make the menu icon visible */
-	.topnav-link.topnav-menu-icon {
+	.link.menu-icon {
 		display: block;
 		padding: 18px 16px;
 	}
 
 	/* Keep the menu icon on the right when clicked */
-	.topnav.drop-down-menu .topnav-menu-icon {
+	.TopNav.drop-down-menu .menu-icon {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
 
 	/* Display the links when menu is clicked */
-	.topnav.drop-down-menu .topnav-link {
+	.TopNav.drop-down-menu .link {
 		display: block;
 		text-align: left;
 	}
 
 	/* Adjusted padding on nav links when in mobile view to try and tighten things up */
-	.topnav.drop-down-menu .topnav-link {
+	.TopNav.drop-down-menu .link {
 		padding: 18px 16px;
 	}
 
@@ -233,7 +233,7 @@ body {
 }
 
 /* Footer CSS */
-.footer {
+.Footer {
 	display: flex;
 	background-color: var(--dark-primary-color);
 	justify-content: center;
@@ -246,36 +246,36 @@ body {
 }
 
 
-/* Links inside the footer */
-.footer-link {
-	color: var(--background-color);
-	padding-top: 10px;
-	padding-bottom: 7px;
-}
+	/* Links inside the footer */
+	.Footer > .link {
+		color: var(--background-color);
+		padding-top: 10px;
+		padding-bottom: 7px;
+	}
 
-/* Space between (not outside) the links */
-.footer-link + .footer-link {
-	padding-left: 13px;
-}
+	/* Space between (not outside) the links */
+	.Footer .link + .link {
+		padding-left: 13px;
+	}
 
-/* Already clicked links change color */
-.footer-link:visited {
-	color: var(--background-color);
-}
+	/* Already clicked links change color */
+	.Footer .link:visited {
+		color: var(--background-color);
+	}
 
-/* Change the link color when the mouse hovers over it */
-.footer-link:hover {
-	color: var(--accent-color);
-}
+	/* Change the link color when the mouse hovers over it */
+	.Footer .link:hover {
+		color: var(--accent-color);
+	}
 
-/* The text at the bottom of the footer */
-.footer-text {
-	color: var(--background-color);
-	font-family: var(--header-font);
-	width: 100%;
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 6px;
-	padding-top: 10px;
-	font-size: 13px;
-}
+	/* The text at the bottom of the footer */
+	.Footer > .text {
+		color: var(--background-color);
+		font-family: var(--header-font);
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 6px;
+		padding-top: 10px;
+		font-size: 13px;
+	}
