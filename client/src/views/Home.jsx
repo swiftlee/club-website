@@ -23,7 +23,7 @@ class Home extends React.Component {
 					<h1 className="title" id="get-involved-title">
 						Get Involved
 					</h1>
-					<p className="get-involved-text">
+					<p className="get-involved-text" style={{color: "var(--secondary-text-color)"}}>
 						OSC is the Open Source Club at the University of Florida. We are a community of makers, who
 						want to solve
 						problems and improve our world using open source projects.

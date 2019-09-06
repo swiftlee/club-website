@@ -26,6 +26,7 @@
 	width: 97%;
 	margin: 20px auto 0;
 	max-width: 1000px;
+	background-color: var(--surface) !important;
 }
 
 /* Position of each element */
@@ -98,10 +99,9 @@
 }
 
 .event {
-	border: 1px solid;
 	background: var(--background-color);
-	border-top-color: var(--primary-color);
-	border-top-width: 5px;
+	border: 1px solid;
+	border-top: 5px var(--primary-color);
 	border-radius: 0 0 6px 6px;
 }
 
@@ -159,11 +159,13 @@ hr {
 
 #get-involved-title {
 	margin-bottom: 0;
+	color: var(--primary-text-color);
 }
 
 #get-involved-text {
 	margin-top: 0;
 	margin-bottom: 0;
+	color: var(--secondary-text-color);
 }
 
 .tagline-icon {
@@ -306,8 +308,7 @@ hr {
 		display: grid;
 		width: 95%;
 		max-width: 500px;
-		margin: 0 auto;
-		margin-top: 10px;
+		margin: 10px auto 0;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(4, 120px) repeat(3, 167px);
 		grid-auto-rows: min-content;

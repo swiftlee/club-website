@@ -20,17 +20,19 @@ site if you need icons or want to update it */
 :root {
 	/* Site colors */
 	--dark-primary-color: #303F9F;
+	--opaque-primary-color: rgba(48,63,159,.7);
 	--light-primary-color: rgb(118, 122, 141);
 	--primary-color: #3F51B5;
 	--text-icon-color: #FFFFFF;
 	--accent-color: #4CAF50;
 	--divider-color: rgb(126, 126, 126);
-	--background-color: #FFFFFF;
+	--background-color: #303030;
+	--surface: #353535;
 	--shadow-color: hsla(0, 0%, 0%, 0.2);
 
-	 /* Text color */
-	--primary-text-color: #212121;
-	--secondary-text-color: #757575;
+	/* Text color */
+	--primary-text-color: #fff;
+	--secondary-text-color: rgba(255, 255, 255, .7);
 
 	/* Font type */
 	--normal-font: 'IBMPlexSerif';
@@ -65,25 +67,24 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
 	background-color: var(--background-color);
 	font-family: var(--normal-font);
 	margin: 0;
-	padding: 0;
 	position: relative;
-	padding-bottom: 6rem;
+	padding: 0 0 6rem;
 	min-height: 100%;
 }
 
 /* Each card used on the site */
 .page-element {
 	background: var(--background-color);
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--opaque-primary-color);
 	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 4px 6px 0 var(--shadow-color);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	justify-content: flex-start;
 	padding: 10px;
 	margin: 10px;
@@ -117,7 +118,7 @@ body {
 /* The header bar */
 .topnav {
 	overflow: hidden;
-	background-color: var(--primary-color);
+	background-color: #373737;
 	display: flex;
 }
 
@@ -187,7 +188,7 @@ body {
 	}
 
 	/* Effect all header links except the logo */
-	.topnav-right .topnav-link{
+	.topnav-right .topnav-link {
 		display: none;
 	}
 
@@ -236,7 +237,7 @@ body {
 /* Footer CSS */
 .footer {
 	display: flex;
-	background-color: var(--dark-primary-color);
+	background-color: #373737;
 	justify-content: center;
 	border-top: 3px solid var(--accent-color);
 	flex-wrap: wrap;
@@ -249,13 +250,14 @@ body {
 
 /* Links inside the footer */
 .footer-link {
-	color: var(--background-color);
+	color: var(--secondary-text-color);
 	padding-top: 10px;
 	padding-bottom: 7px;
 }
 
 /* Space between (not outside) the links */
 .footer-link + .footer-link {
+	color: var(--secondary-text-color);
 	padding-left: 13px;
 }
 
@@ -271,7 +273,7 @@ body {
 
 /* The text at the bottom of the footer */
 .footer-text {
-	color: var(--background-color);
+	color: var(--secondary-text-color);
 	font-family: var(--header-font);
 	width: 100%;
 	text-align: center;
