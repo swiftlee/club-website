@@ -82,7 +82,6 @@ body {
 /* Each card used on the site */
 .page-element {
 	background: var(--background-color);
-	border: 1px solid var(--opaque-primary-color);
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	justify-content: flex-start;
@@ -282,3 +281,5 @@ body {
 	padding-top: 10px;
 	font-size: 13px;
 }
+
+

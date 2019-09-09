@@ -52,7 +52,7 @@ class Slideshow extends Component {
 					))}
 
 				</Carousel>
-				<div>
+				<div style={{"text-align": "center", color: "var(--primary-text-color)"}}>
 					{this.updateLegend()}
 				</div>
 			</div>
